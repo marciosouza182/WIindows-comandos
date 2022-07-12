@@ -1,0 +1,91 @@
+#Verificar status do HD
+
+  wmic diskdrive get caption,status
+
+#Diagnostico para teste de memória
+
+mdsched
+
+#Comando para corrigir problemas de rede
+
+ipconfig /release 
+ipconfig /renew 
+ipconfig /flushdns 
+ipconfig /registerdns 
+nbtstat -rr 
+netsh int ip reset all 
+netsh winsock reset 
+
+
+ #Verificar infromações do sistema
+ 
+ msinfo
+ 
+ #Comandos para verificar e corrigir a imagem do sistema operacional
+ 
+ Sfc /scannow 
+ 
+ DISM.exe /Online /Cleanup-image /Scanhealth  
+ 
+ Dism.exe /Online /Cleanup-Image /CheckHealth   
+ 
+ DISM.exe /Online /Cleanup-image /Restorehealth  
+ 
+ Dism.exe /Online /Cleanup-Image /startComponentCleanup 
+ 
+ #Comando para repara o hd
+ 
+ CHKDSK /f /r
+
+#Comando que monstra a versão e copilação do Windwos
+
+winver
+
+#Comando monstra o gerenciador do computaodr
+
+compmgmtcompmgmt
+
+#comando para entrar no eventview
+
+  eventvwr
+  
+# exibe a listagem dos programas instaldos
+
+appwiz.cpl
+  
+# Comando exibe o monitor de recursos
+
+resmon.exers
+
+#restauração do computador
+
+rstrui.exe
+
+#Comando para relatorio detalhado do hardware
+
+perfmon /report
+
+
+win +i
+win+x
+win +m
+win +s
+ctrl +n
+win + e
+win +tab
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 

@@ -1,0 +1,29 @@
+#Movendo FSMO via ntdsutil atraves do Server que dejesa ser primario.
+
+#Acessar o CMD e acessar o ntdsutil.
+
+ntdsutil: roles
+
+fsmo maintenance: connections
+
+server coonections: connect to domain xxx
+
+server coonections: q
+
+fsmo maintenance: transfer pdc
+
+fsmo maintenance: transfer rid master
+
+fsmo maintenance: transfer naming master
+
+fsmo maintenance: transfer schema master
+
+fsmo maintenance: transfer infrastructure master
+
+após isso no cmd:
+
+repadmin /syncall para forçar a replicação
+
+
+
+

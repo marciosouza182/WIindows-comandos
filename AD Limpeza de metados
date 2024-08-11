@@ -1,0 +1,31 @@
+Limpeza de metadados quando um controlador de dominio tive escrachado, executar via ntdsutil.
+
+limpeza de metadados:
+
+Abri o CMD e executar o ntdsutil e seguir os passos abaixo:
+
+ntdsutil: metadata cleanup
+
+metadata cleanup: connections
+
+server connection: connect to domian xxxx.corp
+
+server connection: q
+
+metadata cleanup: select operation target
+
+select operation target: list domains
+
+select operation target: selecy doamin 0
+
+select operation target: list site
+
+select operation target: select site 0
+
+select operation target: list servers in site
+
+select operation target: select server 2
+
+select operation target: q
+
+metadata cleanup: remove seelcted server

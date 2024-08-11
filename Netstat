@@ -1,0 +1,19 @@
+Comando netstat para verificar portas abertas
+
+netstat -na | findstr 389
+
+by powershell to list ports
+
+get-netTCPConnection -state listen localport 53,389,88
+
+LDAP UDP 389
+Kerberos UDP 88
+Global catalog TCP 3268
+DNS TCP 53
+RPC 135
+SMB TCP 445
+
+===========================================================================================
+
+Exibir apenas as portas que estão “ouvindo”
+netstat -a -n | find /i “listening”
